@@ -1,0 +1,8 @@
+{
+  "name": "TLS Website",
+  "description": "A Django website",
+  "image": "heroku/python",
+  "repository": "https://github.com/tlsiitkgp",
+  "keywords": ["python", "django" ],
+  "addons": []
+}

@@ -1,0 +1,129 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Homepage</title>
+
+    <link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}">
+    <link rel="stylesheet" href="{% static "css/bootstrap-theme.min.css" %}">
+    <link rel="stylesheet" href="{% static "css/theme.css" %}">
+
+    <link rel="shortcut icon" type="image/png" href=" {% static "images/favicon.jpg" %}"/>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/"><img src="{% static "images/tls_logo_transparent.jpg" %} " width="30px" height="30px"></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Publications<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="/publications/alankar">Alankar</a></li>
+                <li><a href="/publications/hangon">Hang On</a></li>
+                <li><a href="/publications/epulse">e-Pulse</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="/publications/teaspoonletters">Teaspoon Letters</a></li>
+                <li><a href="/publications/alfazedil">अल्फ़ाज़-ए-दिल</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Events<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="/publications/alankar">Kavya Sandhya</a></li>
+                  <li><a href="/publications/hangon">Kaavyaanjali</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Misc<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="/bookreviews">Book Reviews</a></li>
+                </ul>
+            </li>
+            <li><a href="/tlsfavorites">TLS Favorites</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Blog</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <!-- Navbar end -->
+
+    <div class="container" style="padding-top: 20px;">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-8" style="font-family: monospace; font-size: xx-large">TECHNOLOGY LITERARY SOCIETY</div>
+        </div>
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-8" style="font-family: monospace; font-size: x-large; padding-left: 120px">प्रौद्योगिकी साहित्यिक समूह</div>
+        </div>
+    </div>
+
+    <div class="container" style="padding-top: 80px;">
+        <div class="row">
+            <div class="col-md-4">
+                <h3>About</h3>
+                <p>Technology Literary Society (TLS) is a student body <br>of writers, poets and designers at Indian Institute of Technology Kharagpur.
+                It is one of the oldest clubs<br> in KGP.</p>
+                <a href="/about">Read More...</a>
+            </div>
+            <div class="col-md-4">
+                <h3>Publications</h3>
+                <p>TLS has a large number of publications in both online and offline medium. Ranging from "Teaspoon Letters"<br> to "Hang On", their publications are very diverse in nature.</p>
+                <a href="/publications">Read More...</a>
+            </div>
+            <div class="col-md-4">
+                <h3>Events</h3>
+                <p>At least once in a semester, TLS gives KGP a poetic evening when poets come on the platform, even from outside the club, and deliver some extraordinary performances.</p>
+                <a href="/events">Read More...</a>
+            </div>
+        </div>
+        <div class="row" style="padding-top: 50px;">
+            <div class="col-md-4">
+                <h3>Book Reviews</h3>
+                <p>Many of us loves to read, but some of us also enjoy the art of recommendations and reviewing the book. TLS presents you some of the Book reviews which they think are worth sharing.</p>
+                <a href="/bookreviews">Read More...</a>
+            </div>
+            <div class="col-md-4">
+                <h3>TLS Favorites</h3>
+                <p>Come to know their taste, what they love to read, what they enjoy thinking about the most ! TLS presents you their own favorite write-ups, blogs, food, sketches, and<br> a lot more !</p>
+                <a href="/tlsfavorites">Read More...</a>
+            </div>
+            <div class="col-md-4">
+                <h3>Contact</h3>
+                <p>Want to share anything with TLS ? Or do you have something which you want to let them know ? Well, they're keen to listen you ! Drop them a message,<br> put up a mail or get yourself invited in a meet-up !</p>
+                <a href="/events">Read More...</a>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- Load scripts below -->
+    <script type="text/javascript" src="{% static "js/jquery-2.2.4.min.js" %}"></script>
+    <script type="text/javascript" src="{% static "js/bootstrap.min.js" %}"></script>
+</body>
